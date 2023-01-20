@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kitchen Comforts</title>
+    <!--Font awesome CDN-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <!--Scroll reveal CDN-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- Google Fonts Logo & Headings and Body -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style(meal-kits).css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav class="nav">
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                    <i class="fas fa-times"></i>
+                </div>
+                <a href="index.html" class="logo"><img src="logo.png" alt=""></a>
+                <ul class="nav-list">
+                    <li class="nav-item">
+                    <a href="index.html" class="nav-link"><i class="fas fa-home"></i> Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link"><i class="fas fa-info-circle"></i> About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link"><i class="fas fa-utensils"></i> Meal Kits</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link"><i class="fas fa-phone"></i> Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- HEADER ENDS -->
+    <section class="meal-kits" id="meal-kits">
+            <h2 class="headline">CIY MEAL KITS</h2>
+            <div class="family-meals animate-left">
+                <h5 class="heading">family meals</h5>
+                <div class="menu">
+                    <div class="menu-item">
+                        <img src="fam1.jpg" alt="">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore</p>
+                        <a href="#" class="btn meal-btn">ORDER NOW</a>
+                    </div>
+                    <div class="menu-item">
+                        <img src="fam2.jpg" alt="">
+                        <p>Nostrum quae itaque voluptatum, aperiam suscipit totam accusamus, maior</p>
+                        <a href="#" class="btn meal-btn">ORDER NOW</a>
+                    </div>
+                    <div class="menu-item">
+                        <img src="fam3.jpg" alt="">
+                        <p>Iste magni nam expedita sed quia, incidunt architecto ab numquam cupidit</p>
+                        <a href="#" class="btn meal-btn">ORDER NOW</a>
+                    </div>
+                </div>
+            </div>
+            <div class="vegan-meals animate-right">
+                <h5 class="heading">vegan meals</h5>
+                <div class="menu">
+                    <div class="menu-item">
+                        <img src="vegan1.jpg" alt="">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore</p>
+                        <a href="#" class="btn meal-btn">ORDER NOW</a>
+                    </div>
+                    <div class="menu-item">
+                        <img src="vegan2.jpg" alt="">
+                        <p>Nostrum quae itaque voluptatum, aperiam suscipit totam accusamus, maior</p>
+                        <a href="#" class="btn meal-btn">ORDER NOW</a>
+                    </div>
+                    <div class="menu-item">
+                        <img src="vegan3.jpg" alt="">
+                        <p>Iste magni nam expedita sed quia, incidunt architecto ab numquam cupidit</p>
+                        <a href="#" class="btn meal-btn">ORDER NOW</a>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!-- MEAL KITS ENDS -->
+    <footer class="footer">
+        <div class="container">
+            <div class="head-line">
+                <h2 class="heading">get in touch</h2>
+            </div>
+            <div class="contact">
+                <div class="socials">
+                    <h6>SOCIALS</h6>
+                    <a href="">Instagram</a>
+                    <br>
+                    <a href="">Twitter</a>
+                    <br>
+                    <a href="">Facebook</a>
+                    <br>
+                    <a href="">kitchencomforts@gmail.com</a>
+                </div>
+                <div class="locations">
+                    <div class="location-1">
+                        <h6>LOCATIONS</h6>
+                        <p>786 Plane Street, Eastern Cape, Engcobo 5054
+                        </p>
+                    </div>
+                    <div class="location-2">
+                        <p>9436 Feather Street, Santa Fe, New Mexico 87501</p>
+                    </div>
+                    <div class="location-3">
+                        <p>2179 Clover Avenue, Coquitlam, British Columbia V3J 5S9</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        // select element function
+        const selectElement = function(element) {
+        return document.querySelector(element);
+        };
+
+        const menuToggler = selectElement('.menu-toggle');
+        let body = selectElement('body');
+
+        menuToggler.addEventListener('click', function () {
+            body.classList.toggle('open');
+        });
+        // Scroll reveal
+        window.sr = ScrollReveal();
+
+        sr.reveal('.animate-left', {
+            origin: 'left',
+            duration: 1000,
+            distance: '25rem',
+            delay: 300
+        });
+
+        sr.reveal('.animate-right', {
+            origin: 'right',
+            duration: 1000,
+            distance: '25rem',
+            delay: 600
+        });
+    </script>
+</body>
+
+</html>
