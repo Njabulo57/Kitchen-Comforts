@@ -156,7 +156,7 @@ nav{
 .hero{
     width: 100%;
     height: 100vh;
-    background: url("/assets/hero.jpg") center no-repeat;
+    background: url("https://github.com/Njabulo57/Kitchen-Comforts/blob/main/assets/hero.jpg") center no-repeat;
     background-size: cover;
     display: flex;
     align-items: center;
@@ -251,7 +251,7 @@ nav{
 .how-it-works{
     width: 100%;
     height: 100vh;
-    background: url("/assets/works.jpg") center no-repeat;
+    background: url("https://github.com/Njabulo57/Kitchen-Comforts/blob/main/assets/works.jpg") center no-repeat;
     background-size: cover;
 }
 
@@ -368,7 +368,7 @@ li{
 
 /* footer */
 footer{
-    background: url('/assets/contact-us.jpg') center no-repeat;
+    background: url('https://github.com/Njabulo57/Kitchen-Comforts/blob/main/assets/contact-us.jpg') center no-repeat;
     background-size: cover;
     font-family: var(--main-font);
     font-size: 1.1rem;
