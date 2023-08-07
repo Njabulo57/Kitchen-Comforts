@@ -177,7 +177,7 @@ nav{
 
 /* footer */
 footer{
-    background: url('https://github.com/Njabulo57/Kitchen-Comforts/blob/main/assets/contact-us.jpg') center no-repeat;
+    background: url('/contact-us.jpg') center no-repeat;
     background-size: cover;
     font-family: var(--main-font);
     font-size: 1.1rem;
